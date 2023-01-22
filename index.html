@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- TAILWIND STYLES -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- MAIN STYLES -->
+  <link rel="stylesheet" href="./src/input.css">
+
+  <title>Frontend Mentor | Advice generator app</title>
+
+</head>
+
+<body>
+
+  <div class="bg-darkBlue flex items-center h-screen">
+    <div class="mx-auto max-w-sm px-5 sm:px-0">
+      <div class=" bg-darkGrayishBlue rounded-2xl flex flex-col items-center gap-y-4 py-3 px-6 shadow-2xl">
+
+        <!-- ADVICE ID -->
+        <p class="text-xs text-neonGreen pt-4">
+          Advice #<span id="id">117</span>
+        </p>
+
+        <!-- ADVICE -->
+        <p  class="text-center text-lightCyan pt-6">
+          "<span id="advice">It is easy to sit up and take notice, what's difficult is getting up and taking action.</span>"
+        </p>
+
+        <!-- DIVIDER -->
+        <img src="./images/pattern-divider-desktop.svg" alt="" class="hidden pt-6 md:block">
+        <img src="./images/pattern-divider-mobile.svg" alt="" class="pt-6 md:hidden">
+
+        <!-- BUTTON DICE -->
+        <button id="rollDice" class="relative top-10 bg-neonGreen p-4 rounded-full">
+          <img src="./images/icon-dice.svg" alt="">
+        </button>
+      </div>
+      <div class="attribution mt-20">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Paul</a>.
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
